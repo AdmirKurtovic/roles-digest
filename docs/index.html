@@ -1,10 +1,88 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <title>Jobs</title>
+  <meta charset="utf-8" />
+  <title>Jobs</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    :root { --bg:#0f1115; --card:#171a21; --muted:#8a94a7; --text:#e6eaf2; --accent:#5b8cff; --border:#242a36; }
+    *{box-sizing:border-box}
+    body{margin:0;padding:24px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,Arial,sans-serif;background:var(--bg);color:var(--text)}
+    .wrap{max-width:1100px;margin:0 auto}
+    h1{font-size:20px;margin:0 0 16px;font-weight:600}
+    .grid{display:grid;grid-template-columns:repeat(1,minmax(0,1fr));gap:16px}
+    @media (min-width:640px){.grid{grid-template-columns:repeat(2,1fr)}}
+    @media (min-width:1024px){.grid{grid-template-columns:repeat(3,1fr)}}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:10px;transition:border-color .2s ease,transform .12s ease}
+    .card:hover{border-color:#2f3645;transform:translateY(-1px)}
+    .row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+    .title{font-size:16px;font-weight:600;line-height:1.3}
+    .company{color:var(--muted);font-size:13px}
+    .badge{display:inline-block;padding:4px 8px;border-radius:999px;font-size:12px;color:#cfd6e6;background:#1f2430;border:1px solid var(--border);white-space:nowrap;max-width:100%;overflow:hidden;text-overflow:ellipsis}
+    .meta{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0}
+    .meta span{font-size:12px;color:var(--muted);background:#1f2430;padding:4px 8px;border-radius:6px;border:1px solid var(--border)}
+    .hr{background:#1a1f2e;border:1px solid #2a3142;border-radius:8px;padding:12px}
+    .hr h4{margin:0 0 8px;color:#e6eaf2;font-size:13px;font-weight:600}
+    .hr-list{display:flex;flex-direction:column;gap:6px}
+    .hr-item{display:flex;flex-direction:column;gap:2px;font-size:12px;color:#cfd6e6}
+    .hr-item a{color:var(--accent);text-decoration:none}
+    .desc{font-size:13px;line-height:1.5;color:#d6dbe7;max-height:220px;overflow-y:auto;padding:8px;background:#0f1115;border-radius:6px;border:1px solid #242a36}
+    .desc::-webkit-scrollbar{width:6px}
+    .desc::-webkit-scrollbar-track{background:#1a1f2e;border-radius:3px}
+    .desc::-webkit-scrollbar-thumb{background:#4a5568;border-radius:3px}
+    .desc::-webkit-scrollbar-thumb:hover{background:#5a6578}
+    .actions{margin-top:6px;display:flex;gap:10px}
+    .btn{appearance:none;border:1px solid var(--border);background:#1b2030;color:var(--text);padding:8px 10px;border-radius:8px;font-size:13px;text-decoration:none;cursor:pointer;transition:background .15s ease,border-color .15s ease}
+    .btn:hover{background:#22283a;border-color:#2e3545}
+    .btn-primary{background:var(--accent);border-color:transparent;color:#fff}
+    .btn-primary:hover{filter:brightness(1.05)}
+    .empty{color:var(--muted);font-size:14px}
+  </style>
 </head>
 <body>
-    <h1>Jobs will appear here</h1>
-    <p>This is a placeholder. Your n8n workflow will update this file.</p>
+  <div class="wrap">
+    <h1>Jobs</h1>
+    <div class="grid">
+      
+                <div class="card">
+                  <div class="row">
+                    <div class="title">Konrad is hiring: Senior UI/UX Designer in New York</div>
+                    <div class="company">Konrad</div>
+                  </div>
+                  <div class="meta">
+                    <span>Full-time</span>
+                    <span>Remote</span>
+                    <span>12 hours ago</span>
+                    <span>US</span>
+                    <span>konrad.com</span>
+                  </div>
+                  
+                  <div class="desc">No description available.</div>
+                  <div class="actions">
+                    <a href="https://www.mediabistro.com/jobs/614018121-konrad-is-hiring-senior-ui-ux-designer-in-new-york?utm_campaign=google_jobs_apply&amp;utm_source=google_jobs_apply&amp;utm_medium=organic" target="_blank" class="btn btn-primary">View Job</a>
+                  </div>
+                </div>
+              
+                <div class="card">
+                  <div class="row">
+                    <div class="title">Staff/Principal Service Designer, Technical (HHS)</div>
+                    <div class="company">Jobgether</div>
+                  </div>
+                  <div class="meta">
+                    <span>Full-time</span>
+                    <span>Remote</span>
+                    <span>18 hours ago</span>
+                    <span>US</span>
+                    <span>jobgether.com</span>
+                  </div>
+                  
+                  <div class="desc"><ul><li>Ability to apply systems thinking to understand and improve organizational and service interactions</li><li>Strong skills in research planning, data collection, analysis, and presenting findings</li><li>Expertise in identifying opportunities for service improvement through ideation and experimentation</li><li>Knowledge of aligning policies, technology, infrastructures, and systems to deliver meaningful outcomes</li><li>Experience leading collaborative research and design activities, influencing teams, and building consensus</li><li>Ability to work effectively in professional services environments and communicate clearly with clients</li><li>Passion for improving public outcomes through innovative and human-centered service design</li><li>Alignment with organizational core values and a proactive, solution-oriented mindset</li><li>Willingness to travel occasionally for work</li><li>Nice-to-have: experience in civic tech and remote-team environments</li><li>Must be legally authorized to work in the U.S.; some roles may require public trust or security clearance</li></ul></div>
+                  <div class="actions">
+                    <a href="https://himalayas.app/companies/jobgether/jobs/staff-principal-service-designer-technical-hhs?utm_campaign=google_jobs_apply&amp;utm_source=google_jobs_apply&amp;utm_medium=organic" target="_blank" class="btn btn-primary">View Job</a>
+                  </div>
+                </div>
+              
+    </div>
+  </div>
 </body>
 </html>
